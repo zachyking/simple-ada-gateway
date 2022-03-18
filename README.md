@@ -9,7 +9,7 @@ npm i
 npm run dev
 ```
 
-Using hosted version from different site (https://<Domain>/pay/<LovelaceAmount>/<Address>)
+Using hosted version from different site (```https://<Domain>/pay/<LovelaceAmount>/<Address>```)
 ```html
     <button 
         onclick={() => window.open(
