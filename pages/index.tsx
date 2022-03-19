@@ -3,8 +3,9 @@ import Layout from '../components/Layout'
 const IndexPage = () => (
   <Layout title="Home | Example">
     <div className='max-w-full m-auto'>
-      <h1 className='my-2' >Hello 👋</h1>
+      <h1>Hello 👋</h1>
       <br/>
+      
       <button 
         className='btn'
         onClick={() => window.open(
@@ -16,6 +17,23 @@ const IndexPage = () => (
       >
         Tip 2 ADA
       </button> 
+
+      <br/>
+      <h2 className="mt-10">To use it on external sites, add a button and run this code on a click </h2>
+      <div className="mt-2 mockup-code">
+        <pre>
+        <code className='block whitespace-pre-wrap'>
+          const paymentUrl = 'https://simple-ada-gateway.vercel.app/pay/&lt;LovelaceAmount&gt;/&lt;CardanoAddress&gt;'
+          <br/>
+          const windowName = 'myWindow'
+          <br/>
+          const size = 'width=400,height=600'
+          <br/>
+          window.open(paymentUrl,
+            windowName,
+            size)
+        </code></pre>
+      </div>
     </div>
   </Layout>
 )
